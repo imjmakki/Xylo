@@ -20,7 +20,10 @@ class _XyloState extends State<Xylo> {
         body: SafeArea(
           child: Center(
             child: FlatButton(
-              onPressed: () {},
+              onPressed: () {
+                final player = AudioCache();
+                player.play('note1.wav');
+              },
               child: Text('Click'),
             ),
           ),
