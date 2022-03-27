@@ -8,9 +8,9 @@ void main() {
 class Xylo extends StatelessWidget {
   const Xylo({Key? key}) : super(key: key);
 
-  void playSound() {
+  void playSound(int soundNumber) {
     final player = AudioCache();
-    player.play('note1.wav');
+    player.play('note$soundNumber.wav');
   }
 
   @override
