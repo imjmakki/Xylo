@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-void main() {
-  runApp(Xylo());
-}
+void main() => runApp(Xylo());
 
 class Xylo extends StatelessWidget {
   const Xylo({Key? key}) : super(key: key);
