@@ -5,14 +5,14 @@ void main() {
   runApp(Xylo());
 }
 
-class Xylo extends StatefulWidget {
+class Xylo extends StatelessWidget {
   const Xylo({Key? key}) : super(key: key);
 
-  @override
-  State<Xylo> createState() => _XyloState();
-}
+  void playSound() {
+    final player = AudioCache();
+    player.play('note1.wav');
+  }
 
-class _XyloState extends State<Xylo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,8 +23,7 @@ class _XyloState extends State<Xylo> {
               FlatButton(
                 color: Colors.greenAccent,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play('note1.wav');
+                  playSound();
                 },
                 child: Text('Click'),
               ),
