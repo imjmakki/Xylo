@@ -34,13 +34,13 @@ class Xylo extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              buildKey();
-              buildKey();
-              buildKey();
-              buildKey();
-              buildKey();
-              buildKey();
-              buildKey();
+              buildKey(),
+              buildKey(),
+              buildKey(),
+              buildKey(),
+              buildKey(),
+              buildKey(),
+              buildKey(),
             ],
           ),
         ),
