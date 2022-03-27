@@ -15,6 +15,17 @@ class Xylo extends StatefulWidget {
 class _XyloState extends State<Xylo> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: Scaffold(
+        body: SafeArea(
+          child: Center(
+            child: FlatButton(
+              onPressed: () {},
+              child: Text('Click'),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
