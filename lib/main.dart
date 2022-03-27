@@ -13,12 +13,12 @@ class Xylo extends StatelessWidget {
     player.play('note$soundNumber.wav');
   }
 
-  Expanded buildKey() {
+  Expanded buildKey({required Color color, required int soundNumber}) {
     return Expanded(
         child: FlatButton(
-      color: Colors.greenAccent,
+      color: color,
       onPressed: () {
-        playSound(7);
+        playSound(soundNumber);
       },
       child: Text('Click'),
     ));
