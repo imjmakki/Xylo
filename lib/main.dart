@@ -17,6 +17,7 @@ class Xylo extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.black54,
         body: SafeArea(
           child: Column(
             children: [
