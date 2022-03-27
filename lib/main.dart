@@ -37,7 +37,7 @@ class _XyloState extends State<Xylo> {
                 child: Text('Click'),
               ),
               FlatButton(
-                color: Colors.amberAccent,
+                color: Colors.teal,
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note3.wav');
@@ -69,7 +69,7 @@ class _XyloState extends State<Xylo> {
                 child: Text('Click'),
               ),
               FlatButton(
-                color: Colors.lightBlue,
+                color: Colors.orange,
                 onPressed: () {
                   final player = AudioCache();
                   player.play('note7.wav');
