@@ -20,6 +20,7 @@ class Xylo extends StatelessWidget {
         backgroundColor: Colors.black54,
         body: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Expanded(
                 child: FlatButton(
